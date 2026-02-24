@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
 
 // necessário para que o retorno da lista seja 
 // interpretado propriamente (criado em model)
@@ -28,9 +29,14 @@ public class PetianoController {
         return repository.findAll(); // em SQL: SELECT * FROM petianos
     }
 
-    @PostMapping()
+    @PostMapping("/post")
     public Petiano createPetiano(@RequestBody Petiano pet){
         return this.repository.save(pet);
+    }
+
+    @GetMapping("/getFilter")
+    public List<Petiano> filterPetianos(@RequestParam String curso){
+        return this.repository.findByCurso(curso);
     }
    
 }
