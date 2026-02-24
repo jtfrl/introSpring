@@ -2,9 +2,20 @@ package Poty.poty.model;
 
 import jakarta.annotation.Generated;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name="petianos")
+@Getter
+@Setter
+// os dois acima podem ser trocados por '@Data'
+
+@AllArgsConstructor
+@NoArgsConstructor
+
 public class Petiano {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,6 +30,12 @@ public class Petiano {
     @Column(name="imagem_perfil", nullable=true)
     private String imagem; // url da imagem
 
+
+
+
+ /*   
+
+ //substituídos pelas annotations depois de '@Table'
     public Petiano(){
 
     }
@@ -28,31 +45,13 @@ public class Petiano {
         this.imagem=imagemPl;
     }
 
-    public void setNome(String n){
-        this.nome=n;
-    }
+    public void setNome(String n){this.nome=n;}
+    public void setCurso(String crs){this.curso=crs;}
+    public void setIm(String url_im){this.imagem=url_im;}
+    public String getNome(){return nome;}
+    public String getCurso(){return curso;}
+    public String getImg(){return imagem;}
 
-    public void setCurso(String crs){
-        this.curso=crs;
-    }
-
-    public void setIm(String url_im){
-        this.imagem=url_im;
-    }
-
-    public String getNome(){
-        return nome;
-    }
-
-        public String getCurso(){
-        return curso;
-    }
-
-
-        public String getImg(){
-        return imagem;
-    }
-
-
+   */ 
 
 }

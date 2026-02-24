@@ -1,4 +1,4 @@
-Poty\poty\repository\PetianoRepository.class
-Poty\poty\controler\PetianoController.class
-Poty\poty\PotyApplication.class
-Poty\poty\model\Petiano.class
+Poty/poty/PotyApplication.class
+Poty/poty/controler/PetianoController.class
+Poty/poty/model/Petiano.class
+Poty/poty/repository/PetianoRepository.class
