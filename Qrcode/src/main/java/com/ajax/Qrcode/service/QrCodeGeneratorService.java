@@ -21,7 +21,7 @@ public class QrCodeGeneratorService {
         String projectRoot=System.getProperty("user.dir");
         QRCodeWriter QRCodeWriter= new QRCodeWriter();
 
-        BitMatrix bitMatrix=QRCodeWriter.encode(text), BarcodeFormat.QR_CODE, width:250, height:250);
+        BitMatrix bitMatrix=QRCodeWriter.encode(text, BarcodeFormat.QR_CODE, width->250, height->250);
 
         Path directory=Paths.get(projectRoot, "qrcodes");
 
@@ -31,7 +31,7 @@ public class QrCodeGeneratorService {
 
         Path path=directory.resolve(fileName);
 
-        MatrixToImageWriter.writeToPath(bitMatrix, "PNG", path)
+        MatrixToImageWriter.writeToPath(bitMatrix, "PNG", path);
 
         return path.toAbsolutePath().toString();
     }
