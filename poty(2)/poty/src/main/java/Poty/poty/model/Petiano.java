@@ -16,7 +16,7 @@ public class Petiano {
     @Column(name="curso", nullable=false)
     private String curso;
 
-    @Column(name="img_perfil", nullable=true)
+    @Column(name="imagem_perfil", nullable=true)
     private String imagem; // url da imagem
 
     public Petiano(){

@@ -1,13 +1,14 @@
 package Poty.poty.controler;
 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-// import Poty.poty.repository.; conferir nos arquivos do drive
+// necessário para que o retorno da lista seja 
+// interpretado propriamente (criado em model)
+import Poty.poty.model.Petiano;
 
 import Poty.poty.repository.PetianoRepository;
 
