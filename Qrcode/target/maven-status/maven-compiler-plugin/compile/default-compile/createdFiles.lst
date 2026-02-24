@@ -1,0 +1,3 @@
+com\ajax\Qrcode\QrcodeApplication.class
+com\ajax\Qrcode\controller\QrCodeController.class
+com\ajax\Qrcode\service\QrCodeGeneratorService.class
