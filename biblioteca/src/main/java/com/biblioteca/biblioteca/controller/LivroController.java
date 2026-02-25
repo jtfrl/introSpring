@@ -10,6 +10,7 @@ import com.model.Livro;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 import java.util.List;
 
@@ -26,18 +27,15 @@ public class LivroController {
 
 
     //checar qual import é preciso aqui
-    @Operation{
-        summary="Cadastrar um novo livro",
-        description="Registra o livro na lista de livros cadastrados"
-    }
 
-    @ApiResponse{
-        value={
-            @ApiResponse(responseCode = 201, description = "Livro cadastrado com sucesso"),
-            @ApiResponse(responseCode = 400, description = "Sintaxe incorreta")
-        }
-    }
-
+    @Operation(
+            summary = "Cadastrar um novo livro", 
+            description = "Registra o livro na lista de livros cadastrados"
+        )
+        @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Livro cadastrado com sucesso"),
+            @ApiResponse(responseCode = "400", description = "Sintaxe incorreta")
+        })
 
     @PostMapping
     public ResponseEntity<Livro> cadastrarLivro(@RequestBody Livro livro){

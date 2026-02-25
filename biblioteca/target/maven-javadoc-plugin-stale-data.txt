@@ -1,0 +1,140 @@
+@options
+@packages
+-classpath
+'C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-h2console/4.0.3/spring-boot-h2console-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot/4.0.3/spring-boot-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-core/7.0.5/spring-core-7.0.5.jar;C:/Users/jeffe/.m2/repository/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-context/7.0.5/spring-context-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-aop/7.0.5/spring-aop-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-beans/7.0.5/spring-beans-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-expression/7.0.5/spring-expression-7.0.5.jar;C:/Users/jeffe/.m2/repository/io/micrometer/micrometer-observation/1.16.3/micrometer-observation-1.16.3.jar;C:/Users/jeffe/.m2/repository/io/micrometer/micrometer-commons/1.16.3/micrometer-commons-1.16.3.jar;C:/Users/jeffe/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.1.0/jakarta.servlet-api-6.1.0.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.0.3/spring-boot-starter-data-jpa-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-starter/4.0.3/spring-boot-starter-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.0.3/spring-boot-starter-logging-4.0.3.jar;C:/Users/jeffe/.m2/repository/ch/qos/logback/logback-classic/1.5.32/logback-classic-1.5.32.jar;C:/Users/jeffe/.m2/repository/ch/qos/logback/logback-core/1.5.32/logback-core-1.5.32.jar;C:/Users/jeffe/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.3/log4j-to-slf4j-2.25.3.jar;C:/Users/jeffe/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.3/log4j-api-2.25.3.jar;C:/Users/jeffe/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.0.3/spring-boot-autoconfigure-4.0.3.jar;C:/Users/jeffe/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar;C:/Users/jeffe/.m2/repository/org/yaml/snakeyaml/2.5/snakeyaml-2.5.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.0.3/spring-boot-starter-jdbc-4.0.3.jar;C:/Users/jeffe/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar;C:/Users/jeffe/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.0.3/spring-boot-data-jpa-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.0.3/spring-boot-data-commons-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-persistence/4.0.3/spring-boot-persistence-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/data/spring-data-commons/4.0.3/spring-data-commons-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.0.3/spring-boot-hibernate-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-jpa/4.0.3/spring-boot-jpa-4.0.3.jar;C:/Users/jeffe/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar;C:/Users/jeffe/.m2/repository/org/hibernate/orm/hibernate-core/7.2.4.Final/hibernate-core-7.2.4.Final.jar;C:/Users/jeffe/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar;C:/Users/jeffe/.m2/repository/org/jboss/logging/jboss-logging/3.6.2.Final/jboss-logging-3.6.2.Final.jar;C:/Users/jeffe/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-orm/7.0.5/spring-orm-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/springframework/data/spring-data-jpa/4.0.3/spring-data-jpa-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-tx/7.0.5/spring-tx-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-aspects/7.0.5/spring-aspects-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.0.3/spring-boot-jdbc-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-sql/4.0.3/spring-boot-sql-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-transaction/4.0.3/spring-boot-transaction-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-jdbc/7.0.5/spring-jdbc-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.0.3/spring-boot-starter-webmvc-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.0.3/spring-boot-starter-jackson-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-jackson/4.0.3/spring-boot-jackson-4.0.3.jar;C:/Users/jeffe/.m2/repository/tools/jackson/core/jackson-databind/3.0.4/jackson-databind-3.0.4.jar;C:/Users/jeffe/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.20/jackson-annotations-2.20.jar;C:/Users/jeffe/.m2/repository/tools/jackson/core/jackson-core/3.0.4/jackson-core-3.0.4.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.0.3/spring-boot-starter-tomcat-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.0.3/spring-boot-starter-tomcat-runtime-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.18/tomcat-embed-core-11.0.18.jar;C:/Users/jeffe/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.18/tomcat-embed-el-11.0.18.jar;C:/Users/jeffe/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.18/tomcat-embed-websocket-11.0.18.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.0.3/spring-boot-tomcat-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.0.3/spring-boot-http-converter-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-web/7.0.5/spring-web-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.0.3/spring-boot-webmvc-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-servlet/4.0.3/spring-boot-servlet-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/springframework/spring-webmvc/7.0.5/spring-webmvc-7.0.5.jar;C:/Users/jeffe/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/3.0.1/springdoc-openapi-starter-webmvc-ui-3.0.1.jar;C:/Users/jeffe/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/3.0.1/springdoc-openapi-starter-webmvc-api-3.0.1.jar;C:/Users/jeffe/.m2/repository/org/springdoc/springdoc-openapi-starter-common/3.0.1/springdoc-openapi-starter-common-3.0.1.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-validation/4.0.3/spring-boot-validation-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/hibernate/validator/hibernate-validator/9.0.1.Final/hibernate-validator-9.0.1.Final.jar;C:/Users/jeffe/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.41/swagger-core-jakarta-2.2.41.jar;C:/Users/jeffe/.m2/repository/org/apache/commons/commons-lang3/3.19.0/commons-lang3-3.19.0.jar;C:/Users/jeffe/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.41/swagger-annotations-jakarta-2.2.41.jar;C:/Users/jeffe/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.41/swagger-models-jakarta-2.2.41.jar;C:/Users/jeffe/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar;C:/Users/jeffe/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.20.2/jackson-databind-2.20.2.jar;C:/Users/jeffe/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.20.2/jackson-core-2.20.2.jar;C:/Users/jeffe/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.20.2/jackson-dataformat-yaml-2.20.2.jar;C:/Users/jeffe/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.20.2/jackson-datatype-jsr310-2.20.2.jar;C:/Users/jeffe/.m2/repository/org/springframework/boot/spring-boot-web-server/4.0.3/spring-boot-web-server-4.0.3.jar;C:/Users/jeffe/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar;C:/Users/jeffe/.m2/repository/org/webjars/webjars-locator-lite/1.1.3/webjars-locator-lite-1.1.3.jar;C:/Users/jeffe/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar;C:/Users/jeffe/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar;C:/Users/jeffe/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.4/jakarta.xml.bind-api-4.0.4.jar;C:/Users/jeffe/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar;C:/Users/jeffe/.m2/repository/com/google/guava/guava/28.0-jre/guava-28.0-jre.jar;C:/Users/jeffe/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar;C:/Users/jeffe/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:/Users/jeffe/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar;C:/Users/jeffe/.m2/repository/org/checkerframework/checker-qual/2.8.1/checker-qual-2.8.1.jar;C:/Users/jeffe/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar;C:/Users/jeffe/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar;C:/Users/jeffe/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar;C:/Users/jeffe/.m2/repository/br/com/caelum/livraria/livraria-base/1.0.0/livraria-base-1.0.0.jar'
+-encoding
+'UTF-8'
+-private
+--release
+21
+-sourcepath
+'C:/Users/jeffe/introSpring/biblioteca/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/jeffe/introSpring/biblioteca/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'biblioteca 0.0.1-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'biblioteca 0.0.1-SNAPSHOT API'
+com.biblioteca.biblioteca
+com.biblioteca.biblioteca.config
+com.biblioteca.biblioteca.controller
+com.biblioteca.biblioteca.service
+com.model
+com.model.repository
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-h2console\4.0.3\spring-boot-h2console-4.0.3.jar = 1771898786322
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot\4.0.3\spring-boot-4.0.3.jar = 1771898787081
+C:\Users\jeffe\.m2\repository\org\springframework\spring-core\7.0.5\spring-core-7.0.5.jar = 1771898788061
+C:\Users\jeffe\.m2\repository\commons-logging\commons-logging\1.3.5\commons-logging-1.3.5.jar = 1771898786442
+C:\Users\jeffe\.m2\repository\org\springframework\spring-context\7.0.5\spring-context-7.0.5.jar = 1771898787482
+C:\Users\jeffe\.m2\repository\org\springframework\spring-aop\7.0.5\spring-aop-7.0.5.jar = 1771898786949
+C:\Users\jeffe\.m2\repository\org\springframework\spring-beans\7.0.5\spring-beans-7.0.5.jar = 1771898787199
+C:\Users\jeffe\.m2\repository\org\springframework\spring-expression\7.0.5\spring-expression-7.0.5.jar = 1771898787254
+C:\Users\jeffe\.m2\repository\io\micrometer\micrometer-observation\1.16.3\micrometer-observation-1.16.3.jar = 1771898787195
+C:\Users\jeffe\.m2\repository\io\micrometer\micrometer-commons\1.16.3\micrometer-commons-1.16.3.jar = 1771898787290
+C:\Users\jeffe\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar = 1771898787422
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\4.0.3\spring-boot-starter-data-jpa-4.0.3.jar = 1771898787374
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-starter\4.0.3\spring-boot-starter-4.0.3.jar = 1771898787406
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-starter-logging\4.0.3\spring-boot-starter-logging-4.0.3.jar = 1771898787452
+C:\Users\jeffe\.m2\repository\ch\qos\logback\logback-classic\1.5.32\logback-classic-1.5.32.jar = 1771898787591
+C:\Users\jeffe\.m2\repository\ch\qos\logback\logback-core\1.5.32\logback-core-1.5.32.jar = 1771898787933
+C:\Users\jeffe\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.25.3\log4j-to-slf4j-2.25.3.jar = 1771898787530
+C:\Users\jeffe\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.3\log4j-api-2.25.3.jar = 1771898787831
+C:\Users\jeffe\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar = 1771898787643
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\4.0.3\spring-boot-autoconfigure-4.0.3.jar = 1771898787877
+C:\Users\jeffe\.m2\repository\jakarta\annotation\jakarta.annotation-api\3.0.0\jakarta.annotation-api-3.0.0.jar = 1771898787766
+C:\Users\jeffe\.m2\repository\org\yaml\snakeyaml\2.5\snakeyaml-2.5.jar = 1771898788044
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\4.0.3\spring-boot-starter-jdbc-4.0.3.jar = 1771898787929
+C:\Users\jeffe\.m2\repository\com\zaxxer\HikariCP\7.0.2\HikariCP-7.0.2.jar = 1771898788046
+C:\Users\jeffe\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar = 1771898788029
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-data-jpa\4.0.3\spring-boot-data-jpa-4.0.3.jar = 1771898788013
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-data-commons\4.0.3\spring-boot-data-commons-4.0.3.jar = 1771898788079
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-persistence\4.0.3\spring-boot-persistence-4.0.3.jar = 1771898788081
+C:\Users\jeffe\.m2\repository\org\springframework\data\spring-data-commons\4.0.3\spring-data-commons-4.0.3.jar = 1771898789094
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-hibernate\4.0.3\spring-boot-hibernate-4.0.3.jar = 1771898788100
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-jpa\4.0.3\spring-boot-jpa-4.0.3.jar = 1771898788132
+C:\Users\jeffe\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.2.0\jakarta.persistence-api-3.2.0.jar = 1771898788292
+C:\Users\jeffe\.m2\repository\org\hibernate\orm\hibernate-core\7.2.4.Final\hibernate-core-7.2.4.Final.jar = 1771898798632
+C:\Users\jeffe\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar = 1771898788185
+C:\Users\jeffe\.m2\repository\org\jboss\logging\jboss-logging\3.6.2.Final\jboss-logging-3.6.2.Final.jar = 1771898788269
+C:\Users\jeffe\.m2\repository\com\fasterxml\classmate\1.7.3\classmate-1.7.3.jar = 1771898788370
+C:\Users\jeffe\.m2\repository\org\springframework\spring-orm\7.0.5\spring-orm-7.0.5.jar = 1771898789127
+C:\Users\jeffe\.m2\repository\org\springframework\data\spring-data-jpa\4.0.3\spring-data-jpa-4.0.3.jar = 1771898790752
+C:\Users\jeffe\.m2\repository\org\springframework\spring-tx\7.0.5\spring-tx-7.0.5.jar = 1771898789291
+C:\Users\jeffe\.m2\repository\org\antlr\antlr4-runtime\4.13.2\antlr4-runtime-4.13.2.jar = 1771898789494
+C:\Users\jeffe\.m2\repository\org\springframework\spring-aspects\7.0.5\spring-aspects-7.0.5.jar = 1771898789334
+C:\Users\jeffe\.m2\repository\org\aspectj\aspectjweaver\1.9.25.1\aspectjweaver-1.9.25.1.jar = 1771898790524
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-jdbc\4.0.3\spring-boot-jdbc-4.0.3.jar = 1771898789567
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-sql\4.0.3\spring-boot-sql-4.0.3.jar = 1771898789669
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-transaction\4.0.3\spring-boot-transaction-4.0.3.jar = 1771898789667
+C:\Users\jeffe\.m2\repository\org\springframework\spring-jdbc\7.0.5\spring-jdbc-7.0.5.jar = 1771898790418
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-starter-webmvc\4.0.3\spring-boot-starter-webmvc-4.0.3.jar = 1771898789876
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-starter-jackson\4.0.3\spring-boot-starter-jackson-4.0.3.jar = 1771898789995
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-jackson\4.0.3\spring-boot-jackson-4.0.3.jar = 1771898790138
+C:\Users\jeffe\.m2\repository\tools\jackson\core\jackson-databind\3.0.4\jackson-databind-3.0.4.jar = 1771898792127
+C:\Users\jeffe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar = 1771898790558
+C:\Users\jeffe\.m2\repository\tools\jackson\core\jackson-core\3.0.4\jackson-core-3.0.4.jar = 1771898790783
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\4.0.3\spring-boot-starter-tomcat-4.0.3.jar = 1771898790739
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat-runtime\4.0.3\spring-boot-starter-tomcat-runtime-4.0.3.jar = 1771898790797
+C:\Users\jeffe\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\11.0.18\tomcat-embed-core-11.0.18.jar = 1771898793569
+C:\Users\jeffe\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\11.0.18\tomcat-embed-el-11.0.18.jar = 1771898790963
+C:\Users\jeffe\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\11.0.18\tomcat-embed-websocket-11.0.18.jar = 1771898791130
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-tomcat\4.0.3\spring-boot-tomcat-4.0.3.jar = 1771898791093
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-http-converter\4.0.3\spring-boot-http-converter-4.0.3.jar = 1771898791198
+C:\Users\jeffe\.m2\repository\org\springframework\spring-web\7.0.5\spring-web-7.0.5.jar = 1771898793574
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-webmvc\4.0.3\spring-boot-webmvc-4.0.3.jar = 1771898791369
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-servlet\4.0.3\spring-boot-servlet-4.0.3.jar = 1771898791476
+C:\Users\jeffe\.m2\repository\org\springframework\spring-webmvc\7.0.5\spring-webmvc-7.0.5.jar = 1771898791925
+C:\Users\jeffe\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\3.0.1\springdoc-openapi-starter-webmvc-ui-3.0.1.jar = 1772044637201
+C:\Users\jeffe\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\3.0.1\springdoc-openapi-starter-webmvc-api-3.0.1.jar = 1772044637349
+C:\Users\jeffe\.m2\repository\org\springdoc\springdoc-openapi-starter-common\3.0.1\springdoc-openapi-starter-common-3.0.1.jar = 1772044637663
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-validation\4.0.3\spring-boot-validation-4.0.3.jar = 1771960182220
+C:\Users\jeffe\.m2\repository\org\hibernate\validator\hibernate-validator\9.0.1.Final\hibernate-validator-9.0.1.Final.jar = 1771960183190
+C:\Users\jeffe\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.41\swagger-core-jakarta-2.2.41.jar = 1772044637670
+C:\Users\jeffe\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar = 1771972969440
+C:\Users\jeffe\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.41\swagger-annotations-jakarta-2.2.41.jar = 1772044637394
+C:\Users\jeffe\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.41\swagger-models-jakarta-2.2.41.jar = 1772044637405
+C:\Users\jeffe\.m2\repository\jakarta\validation\jakarta.validation-api\3.1.1\jakarta.validation-api-3.1.1.jar = 1771960182668
+C:\Users\jeffe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.2\jackson-databind-2.20.2.jar = 1772044639495
+C:\Users\jeffe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.2\jackson-core-2.20.2.jar = 1772044637826
+C:\Users\jeffe\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.20.2\jackson-dataformat-yaml-2.20.2.jar = 1772044637471
+C:\Users\jeffe\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.20.2\jackson-datatype-jsr310-2.20.2.jar = 1772044637620
+C:\Users\jeffe\.m2\repository\org\springframework\boot\spring-boot-web-server\4.0.3\spring-boot-web-server-4.0.3.jar = 1771898798610
+C:\Users\jeffe\.m2\repository\org\webjars\swagger-ui\5.31.0\swagger-ui-5.31.0.jar = 1772044639455
+C:\Users\jeffe\.m2\repository\org\webjars\webjars-locator-lite\1.1.3\webjars-locator-lite-1.1.3.jar = 1772044637865
+C:\Users\jeffe\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar = 1771898786532
+C:\Users\jeffe\.m2\repository\org\projectlombok\lombok\1.18.42\lombok-1.18.42.jar = 1771957864709
+C:\Users\jeffe\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.4\jakarta.xml.bind-api-4.0.4.jar = 1771898793838
+C:\Users\jeffe\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.4\jakarta.activation-api-2.1.4.jar = 1771898793835
+C:\Users\jeffe\.m2\repository\com\google\guava\guava\28.0-jre\guava-28.0-jre.jar = 1772044639806
+C:\Users\jeffe\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar = 1772044637950
+C:\Users\jeffe\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar = 1772044639186
+C:\Users\jeffe\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar = 1771900350878
+C:\Users\jeffe\.m2\repository\org\checkerframework\checker-qual\2.8.1\checker-qual-2.8.1.jar = 1772044639446
+C:\Users\jeffe\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.2\error_prone_annotations-2.3.2.jar = 1772044639265
+C:\Users\jeffe\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar = 1772044639315
+C:\Users\jeffe\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar = 1772044639365
+C:\Users\jeffe\.m2\repository\br\com\caelum\livraria\livraria-base\1.0.0\livraria-base-1.0.0.jar = 1772044639492
+C:\Users\jeffe\introSpring\biblioteca\src\main\java = 1772042074740
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\allclasses-index.html = 1772049087877
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\allpackages-index.html = 1772049087881
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\element-list = 1772049087311
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\help-doc.html = 1772049087946
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\index-all.html = 1772049087931
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\index.html = 1772049087820
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\member-search-index.js = 1772049087903
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\module-search-index.js = 1772049087883
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\overview-summary.html = 1772049087940
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\overview-tree.html = 1772049087815
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\package-search-index.js = 1772049087884
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\search.html = 1772049087937
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\tag-search-index.js = 1772049087904
+C:\Users\jeffe\introSpring\biblioteca\target\site\apidocs\type-search-index.js = 1772049087901

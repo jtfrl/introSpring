@@ -20,7 +20,6 @@ Classe que define a entidade Livro no sistema
 
 */
 
-
 @Entity
 @Getter
 @Setter

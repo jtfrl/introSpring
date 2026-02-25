@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import com.model.Livro;
 import com.model.User;
 import com.model.repository.LivroRepository;
+import com.model.repository.UserRepository;
+//import com.biblioteca.biblioteca.repository.*;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -40,6 +42,9 @@ public class DataInitializer implements CommandLineRunner {
                 "Fábula filosófica sobre amizade e valores humanos"
             );
             
+            // outros livros podem ser adicionados aqui
+
+
             livroRepository.save(livro1);
             livroRepository.save(livro2);
             livroRepository.save(livro3);
