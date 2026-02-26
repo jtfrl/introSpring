@@ -1,8 +1,9 @@
-C:\Users\jeffe\introSpring\biblioteca\src\main\java\com\biblioteca\biblioteca\BibliotecaApplication.java
-C:\Users\jeffe\introSpring\biblioteca\src\main\java\com\biblioteca\biblioteca\config\DataInitializer.java
-C:\Users\jeffe\introSpring\biblioteca\src\main\java\com\biblioteca\biblioteca\controller\LivroController.java
-C:\Users\jeffe\introSpring\biblioteca\src\main\java\com\biblioteca\biblioteca\service\LivroService.java
-C:\Users\jeffe\introSpring\biblioteca\src\main\java\com\model\Livro.java
-C:\Users\jeffe\introSpring\biblioteca\src\main\java\com\model\repository\LivroRepository.java
-C:\Users\jeffe\introSpring\biblioteca\src\main\java\com\model\repository\UserRepository.java
-C:\Users\jeffe\introSpring\biblioteca\src\main\java\com\model\User.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/biblioteca/biblioteca/BibliotecaApplication.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/biblioteca/biblioteca/config/DataInitializer.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/biblioteca/biblioteca/config/SecurityConfig.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/biblioteca/biblioteca/controller/LivroController.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/biblioteca/biblioteca/service/LivroService.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/model/Livro.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/model/User.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/model/repository/LivroRepository.java
+/home/lab-ensino/introSpring/biblioteca/src/main/java/com/model/repository/UserRepository.java

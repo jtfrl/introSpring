@@ -1,8 +1,9 @@
-com\model\repository\LivroRepository.class
-com\model\Livro.class
-com\model\repository\UserRepository.class
-com\biblioteca\biblioteca\BibliotecaApplication.class
-com\biblioteca\biblioteca\controller\LivroController.class
-com\model\User.class
-com\biblioteca\biblioteca\service\LivroService.class
-com\biblioteca\biblioteca\config\DataInitializer.class
+com/model/repository/UserRepository.class
+com/biblioteca/biblioteca/controller/LivroController.class
+com/biblioteca/biblioteca/config/SecurityConfig.class
+com/biblioteca/biblioteca/BibliotecaApplication.class
+com/model/repository/LivroRepository.class
+com/biblioteca/biblioteca/service/LivroService.class
+com/biblioteca/biblioteca/config/DataInitializer.class
+com/model/Livro.class
+com/model/User.class

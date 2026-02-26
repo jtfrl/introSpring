@@ -57,14 +57,14 @@ public class DataInitializer implements CommandLineRunner {
             "admin",
             "admin@admin.com",
             "admin123",
-            true
+            false
         );
 
         User commonUser = new User(
             "user",
             "user@user.com",
             "user123",
-            false
+            true
         );
 
         userRepository.save(admin);
