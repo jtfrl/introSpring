@@ -4,11 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
+import com.biblioteca.biblioteca.repository.LivroRepository;
+import com.biblioteca.biblioteca.repository.UserRepository;
 import com.model.Livro;
 import com.model.User;
-import com.model.repository.LivroRepository;
-import com.model.repository.UserRepository;
-//import com.biblioteca.biblioteca.repository.*;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

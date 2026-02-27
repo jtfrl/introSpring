@@ -1,4 +1,4 @@
-package com.model.repository;
+package com.biblioteca.biblioteca.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

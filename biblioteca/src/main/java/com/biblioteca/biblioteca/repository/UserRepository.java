@@ -1,4 +1,4 @@
-package com.model.repository;
+package com.biblioteca.biblioteca.repository;
 
 import com.model.User;
 

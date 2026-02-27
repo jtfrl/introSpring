@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.model.repository.LivroRepository;
+import com.biblioteca.biblioteca.repository.LivroRepository;
 import com.model.Livro;
 
 import jakarta.annotation.Nonnull;

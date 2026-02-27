@@ -3,8 +3,8 @@ package com.biblioteca.biblioteca.service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.biblioteca.biblioteca.dto.UserDTO;
+import com.biblioteca.biblioteca.repository.UserRepository;
 import com.model.User;
-import com.model.repository.UserRepository;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
