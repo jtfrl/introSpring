@@ -23,12 +23,17 @@ public class FoodService {
 
     public Food buscarPorId(Long id){
         return foodRepository.findById(id)
-        .orElseThrow(()-> RuntimeException("Comida não encontrada com id: "+ id)); 
+        .orElseThrow(()-> new RuntimeException("Comida não encontrada com id: "+ id)); 
     }
 
-    public void deleteFood(Long id){
+    public Boolean deleteFood(Long id){
+        Boolean isDel=false;
+        if(id==null){ 
+            return isDel;
+        }
         Food food=buscarPorId(id);
-        return foodRepository.delete(id);
+        foodRepository.delete(food);
+        return !isDel;
     }
 
     public Food atualizarFood(Long id, Food food){
@@ -40,9 +45,5 @@ public class FoodService {
         atualFood.setImagem(food.getImagem());
 
         return foodRepository.save(atualFood);
-
     }
-
-
-
 }

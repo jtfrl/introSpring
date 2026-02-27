@@ -24,7 +24,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins="*")
+@CrossOrigin(origins="https://localhost:5173") // porta padrão
 public class RestauranteController {
     @Autowired
     private FoodService foodService;
@@ -97,7 +97,7 @@ public class RestauranteController {
             if(food==null){
                return ResponseEntity.notFound().build();
             }
-            Boolean isRemoved=foodService.delete(id);
+            Boolean isRemoved=foodService.deleteFood(id);
             if (!isRemoved) {
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();         
            }

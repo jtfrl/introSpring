@@ -28,7 +28,6 @@ public class User implements UserDetails{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
     @Override
     public String getUsername(){
         return this.login;
@@ -40,6 +39,8 @@ public class User implements UserDetails{
     }
 
     @Override
+    // uma classe desconhecida vai herdar de GrantedAuthority 
+    // aqui seria uma coleção de usuários ('User')
     public Collection<? extends GrantedAuthority> getAuthorities(){
         return null;
     }
