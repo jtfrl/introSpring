@@ -76,7 +76,7 @@ public class RestauranteController {
             if(food==null){
                  return new ResponseEntity<Food>(HttpStatus.BAD_REQUEST);
             }
-        food.setNome(novaFood.getNome());
+        food.setTitle(novaFood.getTitle());
         food.setPreco(novaFood.getPreco());
         food.setImagem(novaFood.getImagem());
 

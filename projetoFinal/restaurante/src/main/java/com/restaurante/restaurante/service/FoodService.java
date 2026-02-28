@@ -40,7 +40,7 @@ public class FoodService {
         Food atualFood=buscarPorId(id);
 
         // toma todos os dados existentes do atual
-        atualFood.setNome(food.getNome());
+        atualFood.setTitle(food.getTitle());
         atualFood.setPreco(food.getPreco());
         atualFood.setImagem(food.getImagem());
 

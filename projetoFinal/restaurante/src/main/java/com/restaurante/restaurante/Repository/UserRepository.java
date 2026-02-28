@@ -7,6 +7,6 @@ import com.restaurante.restaurante.model.User;
 public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findByUsername(String userName);
 
-    boolean existByUsername(String userName);
+    boolean existsByUsername(String userName);
     
 }

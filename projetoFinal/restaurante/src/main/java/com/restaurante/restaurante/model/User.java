@@ -45,8 +45,8 @@ public class User implements UserDetails{
         return null;
     }
 
-    //@Override AJUSTAR
-    //public boolean isAccountNonExpirded() { return true; }
+    //@Override
+    public boolean isAccountNonExpirded() { return true; }
 
     @Override
     public boolean isEnabled() { return true; }

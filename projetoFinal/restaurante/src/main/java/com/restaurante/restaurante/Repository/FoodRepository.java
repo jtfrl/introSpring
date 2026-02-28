@@ -10,7 +10,7 @@ import com.restaurante.restaurante.model.Food;
 
 @Repository
 public interface FoodRepository extends JpaRepository<Food, Long>{
-    List<Food> findComidaPorNome(String comida);
-    List<Food> findComidaPorId(Integer id);
+    List<Food> findByTitle(String comida); // busca por nome
+    List<Food> findById(Integer id);
     
 } 
