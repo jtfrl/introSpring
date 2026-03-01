@@ -25,18 +25,18 @@ public class Food {
     private Long id;
 
     // variaveis usadas no sql: title, price, image 
-    public Food(String title, Float preco, String imagem){
+    public Food(String title, Float price, String image){
         this.title=title;
-        this.preco=preco;
-        this.imagem=imagem;
+        this.price=price;
+        this.image=image;
     }
 
     @Column(nullable=false)
     private String title;
 
     @Column(nullable=false)
-    private Float preco;
+    private Float price;
 
     @Column(nullable=false)
-    private String imagem;
+    private String image;
 }

@@ -24,7 +24,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins="https://localhost:5173") // porta padrão
+@CrossOrigin(origins="http://localhost:5173") // porta padrão
 public class RestauranteController {
     @Autowired
     private FoodService foodService;
@@ -38,9 +38,8 @@ public class RestauranteController {
     // definir @operation
 
     @PostMapping("/foods/get")
-    public ResponseEntity<List<Food>> listarComidas(@RequestBody Food food){
+    public ResponseEntity<List<Food>> listarComidas(){
         List<Food> foods=foodService.listarComidas();
-
         return new ResponseEntity<List<Food>>(foods, HttpStatus.OK);
     }
 
@@ -58,7 +57,7 @@ public class RestauranteController {
         }
     }
     
-    @GetMapping("/foods/get")
+    @GetMapping("/foods/get/{id}")
     public ResponseEntity<Food> buscarPorId(@PathVariable Long id){
         try{
             Food food=foodService.buscarPorId(id);
@@ -77,8 +76,8 @@ public class RestauranteController {
                  return new ResponseEntity<Food>(HttpStatus.BAD_REQUEST);
             }
         food.setTitle(novaFood.getTitle());
-        food.setPreco(novaFood.getPreco());
-        food.setImagem(novaFood.getImagem());
+        food.setPrice(novaFood.getPrice());
+        food.setImage(novaFood.getImage());
 
         Food foodAt=foodService.cadastrarFood(food);    
         
@@ -90,7 +89,7 @@ public class RestauranteController {
         }
     }
 
-    @DeleteMapping("/foods/{id}")
+    @DeleteMapping("/foods/delete/{id}")
     public ResponseEntity<Food> deleteFood(@PathVariable Long id){
         try{
             Food food=foodService.buscarPorId(id);

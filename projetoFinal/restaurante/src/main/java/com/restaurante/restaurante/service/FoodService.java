@@ -41,8 +41,8 @@ public class FoodService {
 
         // toma todos os dados existentes do atual
         atualFood.setTitle(food.getTitle());
-        atualFood.setPreco(food.getPreco());
-        atualFood.setImagem(food.getImagem());
+        atualFood.setPrice(food.getPrice());
+        atualFood.setImage(food.getImage());
 
         return foodRepository.save(atualFood);
     }
