@@ -23,21 +23,13 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/api")
-@CrossOrigin(origins="http://localhost:5173") // porta padrão
+//@RequestMapping("/api")
+@CrossOrigin(origins="http://localhost:5173", allowCredentials="true") // porta padrão
 public class RestauranteController {
     @Autowired
     private FoodService foodService;
 
-    /*
-    public RestauranteController(RestauranteService foodService){
-        this.foodService=restauranteService;
-    }
-         */
-
-    // definir @operation
-
-    @PostMapping("/foods/get")
+    @GetMapping("/foods/get")
     public ResponseEntity<List<Food>> listarComidas(){
         List<Food> foods=foodService.listarComidas();
         return new ResponseEntity<List<Food>>(foods, HttpStatus.OK);
@@ -53,6 +45,7 @@ public class RestauranteController {
             }
             return new ResponseEntity<Food>(foodCad, HttpStatus.CREATED);
         }catch(RuntimeException e){
+            e.printStackTrace();
             return new ResponseEntity<Food>(HttpStatus.BAD_REQUEST);
         }
     }
