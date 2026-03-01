@@ -43,10 +43,12 @@ public class SecurityConfig {
                 "/swagger-ui/**",
                 "/swagger-ui.html").permitAll()
              .requestMatchers("/h2-console/**").permitAll()
-            .requestMatchers(HttpMethod.GET, "/api/foods/**").permitAll()
-            .requestMatchers(HttpMethod.GET, "/api/users/**").permitAll()
-            .requestMatchers(HttpMethod.POST, "/api/foods/**").hasRole("ADMIN")
-            .requestMatchers(HttpMethod.POST, "/api/users/**").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.GET, "/foods/**").permitAll()
+            .requestMatchers(HttpMethod.GET, "/users/**").permitAll()
+            .requestMatchers(HttpMethod.POST, "/foods/**").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.POST, "/users/**").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.PUT, "/foods/**").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.DELETE, "/foods/**").hasRole("ADMIN")
             .anyRequest().authenticated()
             )   
             .httpBasic(Customizer.withDefaults());

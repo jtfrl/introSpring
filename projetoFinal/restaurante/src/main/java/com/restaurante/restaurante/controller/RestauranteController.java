@@ -23,20 +23,20 @@ import java.util.List;
 
 
 @RestController
-//@RequestMapping("/api")
+@RequestMapping("/foods")
 @CrossOrigin(origins="http://localhost:5173", allowCredentials="true") // porta padrão
 public class RestauranteController {
     @Autowired
     private FoodService foodService;
 
-    @GetMapping("/foods/get")
+    @GetMapping
     public ResponseEntity<List<Food>> listarComidas(){
         List<Food> foods=foodService.listarComidas();
         return new ResponseEntity<List<Food>>(foods, HttpStatus.OK);
     }
 
 
-    @PostMapping("/foods/save")
+    @PostMapping //("/foods/{id}")
     public ResponseEntity<Food> cadastrarFood(@RequestBody Food food){
         try{
             Food foodCad=foodService.cadastrarFood(food);
@@ -50,7 +50,7 @@ public class RestauranteController {
         }
     }
     
-    @GetMapping("/foods/get/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Food> buscarPorId(@PathVariable Long id){
         try{
             Food food=foodService.buscarPorId(id);
@@ -60,7 +60,7 @@ public class RestauranteController {
         }
     }
 
-    @PutMapping("/foods/update/{id}")
+    @PutMapping("/{id}")
     // encontrar e salvar 
     public ResponseEntity<Food> atualizaFood(@PathVariable Long id, @RequestBody Food novaFood){
         try{   
@@ -82,7 +82,7 @@ public class RestauranteController {
         }
     }
 
-    @DeleteMapping("/foods/delete/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Food> deleteFood(@PathVariable Long id){
         try{
             Food food=foodService.buscarPorId(id);
@@ -98,8 +98,5 @@ public class RestauranteController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
-
-
-
     
 }
