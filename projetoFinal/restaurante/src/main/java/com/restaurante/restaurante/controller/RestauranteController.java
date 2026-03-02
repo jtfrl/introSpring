@@ -23,7 +23,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/foods")
+@RequestMapping("/api/foods")
 @CrossOrigin(origins="http://localhost:5173", allowCredentials="true") // porta padrão
 public class RestauranteController {
     @Autowired

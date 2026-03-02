@@ -44,10 +44,11 @@ public class SecurityConfig {
                 "/swagger-ui.html").permitAll()
              .requestMatchers("/h2-console/**").permitAll()
             .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+            .requestMatchers(HttpMethod.GET, "/api/foods").permitAll()
             .requestMatchers(HttpMethod.GET, "/api/foods/**").permitAll()
-            .requestMatchers(HttpMethod.GET, "/users/**").permitAll()
+            .requestMatchers(HttpMethod.GET, "/api/users/**").permitAll()
             .requestMatchers(HttpMethod.POST, "/api/foods/**").hasRole("ADMIN")
-            .requestMatchers(HttpMethod.POST, "/users/**").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.POST, "/api/users/**").hasRole("ADMIN")
             .requestMatchers(HttpMethod.PUT, "/api/foods/**").hasRole("ADMIN")
             .requestMatchers(HttpMethod.DELETE, "/api/foods/**").hasRole("ADMIN")
             .anyRequest().authenticated()
@@ -56,6 +57,23 @@ public class SecurityConfig {
             return http.build();
         
     }
+
+    
+    @Bean
+    public org.springframework.web.cors.CorsConfigurationSource corsConfigurationSource() {
+    org.springframework.web.cors.CorsConfiguration configuration = new org.springframework.web.cors.CorsConfiguration();
+
+    configuration.setAllowedOrigins(java.util.List.of("http://localhost:5173"));
+    configuration.setAllowedMethods(java.util.List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+    configuration.setAllowedHeaders(java.util.List.of("*"));
+    configuration.setAllowCredentials(true);
+
+    org.springframework.web.cors.UrlBasedCorsConfigurationSource source =
+        new org.springframework.web.cors.UrlBasedCorsConfigurationSource();
+
+    source.registerCorsConfiguration("/**", configuration);
+    return source;
+    } 
 
     @Bean
     public UserDetailsService userDetailsService(){
@@ -79,6 +97,5 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder(){
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
-
     
 }
