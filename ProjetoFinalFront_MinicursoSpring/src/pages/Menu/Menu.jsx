@@ -17,7 +17,8 @@ export function Menu() {
     async function fetchFoods() {
 
       try {
-        const response = await fetch("http://localhost:8080/foods/get")
+        const response = await fetch("http://localhost:8080/api/foods")
+        // mudança de foods/get para api/foods
 
         if (!response.ok) {
           throw new Error("Erro ao buscar os dados na API!")
@@ -46,7 +47,8 @@ export function Menu() {
     if (!confirmDelete) return
 
     try {
-      const response = await fetch("http://localhost:8080/foods/delete/" + id, {
+      const response = await fetch("http://localhost:8080/api/foods" + id, {
+       // mudança de foods/delete para api/foods 
         method: "DELETE",
         headers: {
           "Authorization": "Basic " + CREDENTIALS
@@ -68,7 +70,8 @@ export function Menu() {
     e.preventDefault()
 
     try {
-      const response = await fetch("http://localhost:8080/foods/update", {
+      const response = await fetch("http://localhost:8080/api/foods" + editingFood.id, {
+        // foods/update para api/foods  
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
